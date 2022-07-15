@@ -22,7 +22,7 @@ def recsys_dataset(dataset_path):
 def get_datasets_info(dataset_path, dataset):
     datasets = {
         "adressa": {
-            "dataset": AdressaOneWeek(path=dataset_path, filename="adressa.csv"),
+            "dataset": AdressaOneWeek(path=dataset_path),
             "t": int(datetime.datetime(2017, 1, 7, 12).strftime("%s")),
             "t_val": int(datetime.datetime(2017, 1, 6, 12).strftime("%s")),
             "delta_out": 12 * 3600,
