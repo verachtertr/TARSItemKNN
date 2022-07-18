@@ -1,12 +1,12 @@
 import click
 import datetime
 
-from recpack.algorithms import TARSItemKNN
 from recpack.datasets import AdressaOneWeek, CosmeticsShop, RecsysChallenge2015
 from recpack.pipelines import PipelineBuilder
 from recpack.scenarios import TimedLastItemPrediction
 from recpack.preprocessing.filters import MinItemsPerUser, MinUsersPerItem
 
+from algorithm_config import ALGORITHM_CONFIG
 
 DATASET_PATH = "/home/robinverachtert/datasets/"
 
@@ -41,117 +41,6 @@ def get_datasets_info(dataset_path, dataset):
         },
     }
     return datasets[dataset]
-
-
-HOUR = 3600  # seconds
-DAY = 24 * HOUR
-
-
-ALGORITHM_CONFIG = {
-    # Literature algorithms
-    "TARSItemKNNLee_W3": {
-        "grid": {"similarity": ["cosine", "pearson"]},
-    },
-    "TARSItemKNNLee_W5": {
-        "grid": {"similarity": ["cosine", "pearson"]},
-    },
-    "TARSItemKNNLiu": {
-        "grid": {
-            "fit_decay": [0]
-            + [1 / x for x in [1 * HOUR, 2 * HOUR, 3 * HOUR, 6 * HOUR, 12 * HOUR, 1 * DAY, 7 * DAY, 14 * DAY]],
-            "predict_decay": [0]
-            + [1 / x for x in [1 * HOUR, 2 * HOUR, 3 * HOUR, 6 * HOUR, 12 * HOUR, 1 * DAY, 7 * DAY, 14 * DAY]],
-        },
-    },
-    "TARSItemKNNDing": {
-        "grid": {
-            "predict_decay": [0]
-            + [1 / x for x in [1 * HOUR, 2 * HOUR, 3 * HOUR, 6 * HOUR, 12 * HOUR, 1 * DAY, 7 * DAY, 14 * DAY]],
-            "similarity": ["cosine", "conditional_probability"],
-        },
-    },
-    "TARSItemKNNLiu2012": {
-        "grid": {
-            "decay": [2, 5, 10, 50, 100, 200, 500, 1000],
-        },
-    },
-    "TARSItemKNNVaz": {
-        "grid": {
-            "fit_decay": [
-                1 / x
-                for x in [1 * HOUR, 2 * HOUR, 3 * HOUR, 6 * HOUR, 12 * HOUR, 1 * DAY, 7 * DAY, 14 * DAY, 30 * DAY]
-            ],
-            "predict_decay": [
-                1 / x
-                for x in [1 * HOUR, 2 * HOUR, 3 * HOUR, 6 * HOUR, 12 * HOUR, 1 * DAY, 7 * DAY, 14 * DAY, 30 * DAY]
-            ],
-        }
-    },
-    # Extensions
-    "TARSItemKNNLee": {
-        "grid": {"similarity": ["cosine", "pearson"], "W": [2, 3, 4, 5, 8, 10, 16]},
-    },
-    "TARSItemKNNexponential": {
-        "algorithm": "TARSItemKNN",
-        "grid": {
-            "similarity": TARSItemKNN.SUPPORTED_SIMILARITIES,
-            "fit_decay": [
-                1 / x
-                for x in [1 * HOUR, 2 * HOUR, 3 * HOUR, 6 * HOUR, 12 * HOUR, 1 * DAY, 7 * DAY, 14 * DAY, 30 * DAY]
-            ],
-            "predict_decay": [
-                1 / x
-                for x in [1 * HOUR, 2 * HOUR, 3 * HOUR, 6 * HOUR, 12 * HOUR, 1 * DAY, 7 * DAY, 14 * DAY, 30 * DAY]
-            ],
-        },
-        "params": {"decay_function": "exponential"},
-    },
-    "TARSItemKNNlog": {
-        "algorithm": "TARSItemKNN",
-        "grid": {
-            "similarity": TARSItemKNN.SUPPORTED_SIMILARITIES,
-            "fit_decay": [2, 4, 8, 16, 32],
-            "predict_decay": [2, 4, 8, 16, 32],
-        },
-        "params": {"decay_function": "log"},
-    },
-    "TARSItemKNNlinear": {
-        "algorithm": "TARSItemKNN",
-        "grid": {
-            "similarity": TARSItemKNN.SUPPORTED_SIMILARITIES,
-            "fit_decay": [0.1, 0.3, 0.5, 0.7, 0.9, 1],
-            "predict_decay": [0.1, 0.3, 0.5, 0.7, 0.9, 1],
-        },
-        "params": {"decay_function": "linear"},
-    },
-    "TARSItemKNNconcave": {
-        "algorithm": "TARSItemKNN",
-        "grid": {
-            "similarity": TARSItemKNN.SUPPORTED_SIMILARITIES,
-            "fit_decay": [0.01, 0.1, 0.3, 0.9],
-            "predict_decay": [0.01, 0.1, 0.3, 0.9],
-        },
-        "params": {"decay_function": "concave"},
-    },
-    "TARSItemKNNconvex": {
-        "algorithm": "TARSItemKNN",
-        "grid": {
-            "similarity": TARSItemKNN.SUPPORTED_SIMILARITIES,
-            "fit_decay": [0.01, 0.1, 0.3, 0.9],
-            "predict_decay": [0.01, 0.1, 0.3, 0.9],
-        },
-        "params": {"decay_function": "convex"},
-    },
-    "TARSItemKNNlinear_steeper": {
-        "algorithm": "TARSItemKNN",
-        "grid": {
-            "similarity": TARSItemKNN.SUPPORTED_SIMILARITIES,
-            "fit_decay": [1, 5, 10, 50, 100, 1000],
-            "predict_decay": [1, 5, 10, 50, 100, 1000],
-        },
-        "params": {"decay_function": "linear_steeper"},
-    },
-}
 
 
 @click.command()
