@@ -1,7 +1,7 @@
 import click
 import datetime
 
-from recpack.datasets import AdressaOneWeek, CosmeticsShop, RecsysChallenge2015
+from recpack.datasets import AdressaOneWeek, CosmeticsShop, RecsysChallenge2015, Netflix
 from recpack.pipelines import PipelineBuilder
 from recpack.scenarios import TimedLastItemPrediction
 from recpack.preprocessing.filters import MinItemsPerUser, MinUsersPerItem
@@ -38,6 +38,12 @@ def get_datasets_info(dataset_path, dataset):
             "t": int(datetime.datetime(2014, 9, 15, 0).strftime("%s")),
             "t_val": int(datetime.datetime(2014, 9, 1, 0).strftime("%s")),
             "delta_out": 14 * 24 * 3600,
+        },
+        "netflix": {
+            "dataset": Netflix(dataset_path),
+            "t": int(datetime.datetime(2005, 10, 1, 0).strftime("%s")),
+            "t_val": int(datetime.datetime(2005, 9, 1, 0).strftime("%s")),
+            "delta_out": 31 * 24 * 3600,
         },
     }
     return datasets[dataset]
