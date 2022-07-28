@@ -44,13 +44,13 @@ ALGORITHM_CONFIG = {
             ],
         }
     },
-    "TARSItemKNNHermann": {"grid": {"decay_interval": [1, HOUR, DAY, 7 * DAY, 30 * DAY]}},
+    # "TARSItemKNNHermann": {"grid": {"decay_interval": [1, HOUR, DAY, 7 * DAY, 30 * DAY]}},
     # "TARSItemKNNXia_concave": {"algorithm": "TARSItemKNNXia", "grid": {"fit_decay": [0, 0.1, 0.3, 0.5, 0.7, 0.9, 1]}},
     # "TARSItemKNNXia_convex": {"algorithm": "TARSItemKNNXia", "grid": {"fit_decay": [0.1, 0.3, 0.5, 0.7, 0.9]}},
-    "TARSItemKNNXia_linear": {
-        "algorithm": "TARSItemKNNXia",
-        "grid": {"fit_decay": [0, 0.1, 0.3, 0.5, 0.7, 0.9, 1], "decay_interval": [1, HOUR, DAY, 7 * DAY, 30 * DAY]},
-    },
+    # "TARSItemKNNXia_linear": {
+    #     "algorithm": "TARSItemKNNXia",
+    #     "grid": {"fit_decay": [0, 0.5, 1], "decay_interval": [DAY]},
+    # },
     # Extensions
     "TARSItemKNNLee": {
         "grid": {"similarity": ["cosine", "pearson"], "W": [2, 3, 4, 5, 8, 10, 16]},
@@ -130,24 +130,24 @@ ALGORITHM_CONFIG = {
         },
         "params": {"decay_function": "inverse"},
     },
-    "TARSItemKNNCoocDistanceexponential": {
-        "algorithm": "TARSItemKNNCoocDistance",
-        "grid": {
-            "similarity": TARSItemKNNCoocDistance.SUPPORTED_SIMILARITIES,
-            "fit_decay": [
-                1 / x
-                for x in [1 * HOUR, 2 * HOUR, 3 * HOUR, 6 * HOUR, 12 * HOUR, 1 * DAY, 7 * DAY, 14 * DAY, 30 * DAY]
-            ]
-            + [0],
-            "predict_decay": [
-                1 / x
-                for x in [1 * HOUR, 2 * HOUR, 3 * HOUR, 6 * HOUR, 12 * HOUR, 1 * DAY, 7 * DAY, 14 * DAY, 30 * DAY]
-            ]
-            + [0],
-            "event_age_weight": [0, 0.25, 0.5, 0.75, 1],
-        },
-        "params": {"decay_function": "exponential"},
-    },
+    #"TARSItemKNNCoocDistanceexponential": {
+    #    "algorithm": "TARSItemKNNCoocDistance",
+    #    "grid": {
+    #        "similarity": TARSItemKNNCoocDistance.SUPPORTED_SIMILARITIES,
+    #        "fit_decay": [
+    #            1 / x
+    #            for x in [1 * HOUR, 2 * HOUR, 3 * HOUR, 6 * HOUR, 12 * HOUR, 1 * DAY, 7 * DAY, 14 * DAY, 30 * DAY]
+    #        ]
+    #        + [0],
+    #        "predict_decay": [
+    #            1 / x
+    #            for x in [1 * HOUR, 2 * HOUR, 3 * HOUR, 6 * HOUR, 12 * HOUR, 1 * DAY, 7 * DAY, 14 * DAY, 30 * DAY]
+    #        ]
+    #        + [0],
+    #        "event_age_weight": [0, 0.25, 0.5, 0.75, 1],
+    #    },
+    #    "params": {"decay_function": "exponential"},
+    #},
     # "TARSItemKNNCoocDistancelog": {
     #     "algorithm": "TARSItemKNNCoocDistance",
     #     "grid": {
@@ -159,17 +159,17 @@ ALGORITHM_CONFIG = {
     #     },
     #     "params": {"decay_function": "log"},
     # },
-    "TARSItemKNNCoocDistancelinear": {
-        "algorithm": "TARSItemKNNCoocDistance",
-        "grid": {
-            "similarity": TARSItemKNNCoocDistance.SUPPORTED_SIMILARITIES,
-            "fit_decay": [0.1, 0.3, 0.5, 0.7, 0.9, 1],
-            "predict_decay": [0.1, 0.3, 0.5, 0.7, 0.9, 1],
-            "decay_interval": [1, HOUR, DAY, 7 * DAY, 30 * DAY],
-            "event_age_weight": [0, 0.25, 0.5, 0.75, 1],
-        },
-        "params": {"decay_function": "linear"},
-    },
+    #"TARSItemKNNCoocDistancelinear": {
+    #    "algorithm": "TARSItemKNNCoocDistance",
+    #    "grid": {
+    #        "similarity": TARSItemKNNCoocDistance.SUPPORTED_SIMILARITIES,
+    #        "fit_decay": [0.1, 0.3, 0.5, 0.7, 0.9, 1],
+    #        "predict_decay": [0.1, 0.3, 0.5, 0.7, 0.9, 1],
+    #        "decay_interval": [1, HOUR, DAY, 7 * DAY, 30 * DAY],
+    #        "event_age_weight": [0, 0.25, 0.5, 0.75, 1],
+    #    },
+    #    "params": {"decay_function": "linear"},
+    #},
     # "TARSItemKNNCoocDistanceconcave": {
     #     "algorithm": "TARSItemKNNCoocDistance",
     #     "grid": {
@@ -203,13 +203,13 @@ ALGORITHM_CONFIG = {
     #     },
     #     "params": {"decay_function": "linear_steeper"},
     # },
-    "TARSItemKNNCoocDistanceinverse": {
-        "algorithm": "TARSItemKNNCoocDistance",
-        "grid": {
-            "similarity": TARSItemKNNCoocDistance.SUPPORTED_SIMILARITIES,
-            "decay_interval": [1, HOUR, DAY, 7 * DAY, 30 * DAY],
-            "event_age_weight": [0, 0.25, 0.5, 0.75, 1],
-        },
-        "params": {"decay_function": "inverse"},
-    },
+    #"TARSItemKNNCoocDistanceinverse": {
+    #    "algorithm": "TARSItemKNNCoocDistance",
+    #    "grid": {
+    #        "similarity": TARSItemKNNCoocDistance.SUPPORTED_SIMILARITIES,
+    #        "decay_interval": [1, HOUR, DAY, 7 * DAY, 30 * DAY],
+    #        "event_age_weight": [0, 0.25, 0.5, 0.75, 1],
+    #    },
+    #    "params": {"decay_function": "inverse"},
+    #},
 }
