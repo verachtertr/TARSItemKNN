@@ -3,7 +3,7 @@ import datetime
 
 from recpack.datasets import AdressaOneWeek, CosmeticsShop, RecsysChallenge2015, Netflix
 from recpack.pipelines import PipelineBuilder
-from recpack.scenarios import TimedLastItemPrediction
+from recpack.scenarios import Timed, TimedLastItemPrediction
 from recpack.preprocessing.filters import MinItemsPerUser, MinUsersPerItem
 
 from algorithm_config import ALGORITHM_CONFIG
@@ -59,6 +59,7 @@ def get_datasets_info(dataset_path, dataset):
     multiple=True,
     default=list(ALGORITHM_CONFIG.keys()),
 )
+@click.option("--scenario", help="the scenario to evaluate", default="TimedLastItem")
 @click.option("--results-path", help="path to put results, defaults to results", default="results")
 @click.option(
     "--experiment-name",
@@ -66,7 +67,7 @@ def get_datasets_info(dataset_path, dataset):
     help="name of the experiment, will define the folder written inside results-path. Defaults to {dataset}",
     default=None,
 )
-def run(dataset, dataset_path, algorithm, results_path, experiment_name):
+def run(dataset, dataset_path, algorithm, scenario, results_path, experiment_name):
     print(f"running {', '.join(algorithm)} on {dataset}")
 
     experiment_name = experiment_name if experiment_name else dataset
@@ -74,6 +75,9 @@ def run(dataset, dataset_path, algorithm, results_path, experiment_name):
     for a in algorithm:
         if a not in ALGORITHM_CONFIG:
             raise ValueError(f"{a} not supported in experiment, please use one of the preconfigured algorithms.")
+
+    if scenario not in ["Timed", "TimedLastItem"]:
+        raise ValueError(f"{scenario} is not supported. Use one of {['Timed', 'TimedLastItem']}")
 
     print(">> Loading dataset")
     im = get_datasets_info(dataset_path, dataset)["dataset"].load()
@@ -85,8 +89,13 @@ def run(dataset, dataset_path, algorithm, results_path, experiment_name):
     delta_out = get_datasets_info(dataset_path, dataset)["delta_out"]
 
     print(">> Splitting dataset")
-    scenario = TimedLastItemPrediction(t=t, t_validation=t_val, validation=True, delta_out=delta_out)
-    scenario.split(im)
+    if scenario == "TimedLastItem":
+        scenario = TimedLastItemPrediction(t=t, t_validation=t_val, validation=True, delta_out=delta_out)
+        scenario.split(im)
+    elif scenario == "Timed":
+        scenario = Timed(t=t, t_validation=t_val, validation=True, delta_out=delta_out)
+        scenario.split(im)
+
     print("<< Split dataset")
 
     builder = PipelineBuilder(experiment_name, base_path=results_path)
