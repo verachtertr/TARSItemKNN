@@ -53,9 +53,9 @@ ALGORITHM_CONFIG = {
     #     "grid": {"fit_decay": [0, 0.5, 1], "decay_interval": [DAY]},
     # },
     # Extensions
-    "TARSItemKNNLee": {
-        "grid": {"similarity": ["cosine", "pearson"], "W": [2, 3, 4, 5, 8, 10, 16]},
-    },
+    # "TARSItemKNNLee": {
+    #     "grid": {"similarity": ["cosine", "pearson"], "W": [2, 3, 4, 5, 8, 10, 16]},
+    # },
     "TARSItemKNNexponential": {
         "algorithm": "TARSItemKNN",
         "grid": {
