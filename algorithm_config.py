@@ -3,7 +3,7 @@ from recpack.algorithms import TARSItemKNN, TARSItemKNNCoocDistance
 HOUR = 3600  # seconds
 DAY = 24 * HOUR
 
-SIMILARITY_FUNCTIONS = ["cosine", "pearson"]
+SIMILARITY_FUNCTIONS = ["cosine", "conditional_probability"]
 
 ALGORITHM_CONFIG = {
     # Literature algorithms
