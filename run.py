@@ -59,7 +59,7 @@ def get_datasets_info(dataset_path, dataset):
     multiple=True,
     default=list(ALGORITHM_CONFIG.keys()),
 )
-@click.option("--scenario", help="the scenario to evaluate", default="TimedLastItem")
+@click.option("--scenario", help="the scenario to evaluate", default="TimedLastItemPrediction")
 @click.option("--results-path", help="path to put results, defaults to results", default="results")
 @click.option(
     "--experiment-name",
@@ -76,8 +76,8 @@ def run(dataset, dataset_path, algorithm, scenario, results_path, experiment_nam
         if a not in ALGORITHM_CONFIG:
             raise ValueError(f"{a} not supported in experiment, please use one of the preconfigured algorithms.")
 
-    if scenario not in ["Timed", "TimedLastItem"]:
-        raise ValueError(f"{scenario} is not supported. Use one of {['Timed', 'TimedLastItem']}")
+    if scenario not in ["Timed", "TimedLastItemPrediction"]:
+        raise ValueError(f"{scenario} is not supported. Use one of {['Timed', 'TimedLastItemPrediction']}")
 
     print(">> Loading dataset")
     im = get_datasets_info(dataset_path, dataset)["dataset"].load()
@@ -89,7 +89,7 @@ def run(dataset, dataset_path, algorithm, scenario, results_path, experiment_nam
     delta_out = get_datasets_info(dataset_path, dataset)["delta_out"]
 
     print(">> Splitting dataset")
-    if scenario == "TimedLastItem":
+    if scenario == "TimedLastItemPrediction":
         scenario = TimedLastItemPrediction(t=t, t_validation=t_val, validation=True, delta_out=delta_out)
         scenario.split(im)
     elif scenario == "Timed":
