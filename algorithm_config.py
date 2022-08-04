@@ -1,5 +1,3 @@
-from recpack.algorithms import TARSItemKNN, TARSItemKNNCoocDistance
-
 HOUR = 3600  # seconds
 DAY = 24 * HOUR
 
