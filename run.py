@@ -2,7 +2,7 @@ import click
 import datetime
 
 from recpack.datasets import AdressaOneWeek, CosmeticsShop, RecsysChallenge2015, Netflix
-from recpack.pipelines import PipelineBuilder
+from recpack.pipelines import PipelineBuilder, OptimisationInfo, GridSearchInfo, HyperoptInfo
 from recpack.scenarios import Timed, TimedLastItemPrediction
 from recpack.preprocessing.filters import MinItemsPerUser, MinUsersPerItem
 
@@ -109,7 +109,11 @@ def run(dataset, dataset_path, algorithm, scenario, results_path, experiment_nam
 
     for a in algorithm:
         conf = ALGORITHM_CONFIG[a]
-        builder.add_algorithm(conf.get("algorithm", a), params=conf.get("params", {}), grid=conf.get("grid", {}))
+        builder.add_algorithm(
+            conf.get("algorithm", a),
+            params=conf.get("params", {}),
+            optimisation_info=conf.get("optimisation_info", OptimisationInfo()),
+        )
 
     pipe = builder.build()
     print(">> Running pipeline")
