@@ -84,7 +84,7 @@ ALGORITHM_CONFIG = {
         ),
         "params": {"decay_function": "linear"},
     },
-    "TARSItemKNNXia_exponential": {
+    "TARSItemKNNXia_convex": {
         "algorithm": "TARSItemKNNXia",
         "optimisation_info": HyperoptInfo(
             {
@@ -94,7 +94,7 @@ ALGORITHM_CONFIG = {
             timeout=DAY,
             max_evals=50,
         ),
-        "params": {"decay_function": "exponential"},
+        "params": {"decay_function": "convex"},
     },
     # Extensions
     "TARSItemKNNexponential": {
