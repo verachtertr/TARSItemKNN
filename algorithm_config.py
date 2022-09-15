@@ -1,6 +1,6 @@
 from hyperopt import hp
 from recpack.algorithms import TARSItemKNNCoocDistance
-from recpack.pipelines import GridSearchInfo, HyperoptInfo
+from recpack.pipelines import GridSearchInfo, HyperoptInfo, OptimisationInfo
 
 HOUR = 3600  # seconds
 DAY = 24 * HOUR
@@ -55,11 +55,7 @@ ALGORITHM_CONFIG = {
             }
         )
     },
-    "TARSItemKNNHermann": {
-        "optimisation_info": HyperoptInfo(
-            space={"decay_interval": hp.uniformint("decay_interval", 1, 30 * DAY)}, timeout=DAY, max_evals=50
-        )
-    },
+    "TARSItemKNNHermann": {"optimisation_info": OptimisationInfo()},
     "TARSItemKNNXia_concave": {
         "algorithm": "TARSItemKNNXia",
         "optimisation_info": HyperoptInfo(
@@ -79,7 +75,7 @@ ALGORITHM_CONFIG = {
                 "fit_decay": hp.uniform("fit_decay", 0, 10),
                 "decay_interval": hp.uniformint("decay_interval", 1, 30 * DAY),
             },
-            timeout=12*HOUR,
+            timeout=12 * HOUR,
             max_evals=50,
         ),
         "params": {"decay_function": "linear"},
