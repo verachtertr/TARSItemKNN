@@ -1,0 +1,87 @@
+{
+    "identifier": {
+        "0": "TARSItemKNNHermann(K=200,decay_interval=1)",
+        "1": "TARSItemKNNHermann(K=200,decay_interval=3600)",
+        "2": "TARSItemKNNHermann(K=200,decay_interval=86400)",
+        "3": "TARSItemKNNHermann(K=200,decay_interval=604800)",
+        "4": "TARSItemKNNHermann(K=200,decay_interval=2592000)",
+        "5": "TARSItemKNNXia(K=200,decay_function=concave,decay_interval=86400,fit_decay=0)",
+        "6": "TARSItemKNNXia(K=200,decay_function=concave,decay_interval=86400,fit_decay=0.1)",
+        "7": "TARSItemKNNXia(K=200,decay_function=concave,decay_interval=86400,fit_decay=0.3)",
+        "8": "TARSItemKNNXia(K=200,decay_function=concave,decay_interval=86400,fit_decay=0.5)",
+        "9": "TARSItemKNNXia(K=200,decay_function=concave,decay_interval=86400,fit_decay=0.7)",
+        "10": "TARSItemKNNXia(K=200,decay_function=concave,decay_interval=86400,fit_decay=0.9)",
+        "11": "TARSItemKNNXia(K=200,decay_function=concave,decay_interval=86400,fit_decay=0)",
+        "12": "TARSItemKNNXia(K=200,decay_function=concave,decay_interval=86400,fit_decay=0.5)",
+        "13": "TARSItemKNNXia(K=200,decay_function=concave,decay_interval=86400,fit_decay=0.9)"
+    },
+    "params": {
+        "0": {
+            "decay_interval": 1
+        },
+        "1": {
+            "decay_interval": 3600
+        },
+        "2": {
+            "decay_interval": 86400
+        },
+        "3": {
+            "decay_interval": 604800
+        },
+        "4": {
+            "decay_interval": 2592000
+        },
+        "5": {
+            "fit_decay": 0,
+            "decay_function": "concave"
+        },
+        "6": {
+            "fit_decay": 0.1,
+            "decay_function": "concave"
+        },
+        "7": {
+            "fit_decay": 0.3,
+            "decay_function": "concave"
+        },
+        "8": {
+            "fit_decay": 0.5,
+            "decay_function": "concave"
+        },
+        "9": {
+            "fit_decay": 0.7,
+            "decay_function": "concave"
+        },
+        "10": {
+            "fit_decay": 0.9,
+            "decay_function": "concave"
+        },
+        "11": {
+            "decay_interval": 86400,
+            "fit_decay": 0
+        },
+        "12": {
+            "decay_interval": 86400,
+            "fit_decay": 0.5
+        },
+        "13": {
+            "decay_interval": 86400,
+            "fit_decay": 0.9
+        }
+    },
+    "ndcgk_10": {
+        "0": 0.0080829686,
+        "1": 0.0080829686,
+        "2": 0.0080829686,
+        "3": 0.0080829686,
+        "4": 0.0080829686,
+        "5": 0.0397037055,
+        "6": 0.0296022221,
+        "7": 0.0262586448,
+        "8": 0.0247845316,
+        "9": 0.0238088642,
+        "10": 0.0232513416,
+        "11": 0.0397037055,
+        "12": 0.0247845316,
+        "13": 0.0232513416
+    }
+}

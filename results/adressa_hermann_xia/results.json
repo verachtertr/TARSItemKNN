@@ -1,0 +1,58 @@
+{
+    "ndcgk_10": {
+        "TARSItemKNNHermann(K=200,decay_interval=1)": 0.0178100123,
+        "TARSItemKNNXia(K=200,decay_function=concave,decay_interval=86400,fit_decay=0)": 0.0044498197
+    },
+    "ndcgk_20": {
+        "TARSItemKNNHermann(K=200,decay_interval=1)": 0.0263625402,
+        "TARSItemKNNXia(K=200,decay_function=concave,decay_interval=86400,fit_decay=0)": 0.0055007069
+    },
+    "ndcgk_50": {
+        "TARSItemKNNHermann(K=200,decay_interval=1)": 0.0435347692,
+        "TARSItemKNNXia(K=200,decay_function=concave,decay_interval=86400,fit_decay=0)": 0.0112066911
+    },
+    "coveragek_10": {
+        "TARSItemKNNHermann(K=200,decay_interval=1)": 0.8336917563,
+        "TARSItemKNNXia(K=200,decay_function=concave,decay_interval=86400,fit_decay=0)": 0.0842293907
+    },
+    "coveragek_20": {
+        "TARSItemKNNHermann(K=200,decay_interval=1)": 0.9010752688,
+        "TARSItemKNNXia(K=200,decay_function=concave,decay_interval=86400,fit_decay=0)": 0.1308243728
+    },
+    "calibratedrecallk_10": {
+        "TARSItemKNNHermann(K=200,decay_interval=1)": 0.0331697306,
+        "TARSItemKNNXia(K=200,decay_function=concave,decay_interval=86400,fit_decay=0)": 0.0073456144
+    },
+    "calibratedrecallk_20": {
+        "TARSItemKNNHermann(K=200,decay_interval=1)": 0.0597641077,
+        "TARSItemKNNXia(K=200,decay_function=concave,decay_interval=86400,fit_decay=0)": 0.0106337847
+    },
+    "calibratedrecallk_50": {
+        "TARSItemKNNHermann(K=200,decay_interval=1)": 0.1302888215,
+        "TARSItemKNNXia(K=200,decay_function=concave,decay_interval=86400,fit_decay=0)": 0.0339484658
+    },
+    "reciprocalrankk_10": {
+        "TARSItemKNNHermann(K=200,decay_interval=1)": 0.0204041831,
+        "TARSItemKNNXia(K=200,decay_function=concave,decay_interval=86400,fit_decay=0)": 0.0056408969
+    },
+    "reciprocalrankk_20": {
+        "TARSItemKNNHermann(K=200,decay_interval=1)": 0.0241547202,
+        "TARSItemKNNXia(K=200,decay_function=concave,decay_interval=86400,fit_decay=0)": 0.0061876412
+    },
+    "reciprocalrankk_50": {
+        "TARSItemKNNHermann(K=200,decay_interval=1)": 0.0278758081,
+        "TARSItemKNNXia(K=200,decay_function=concave,decay_interval=86400,fit_decay=0)": 0.0077167977
+    },
+    "precisionk_10": {
+        "TARSItemKNNHermann(K=200,decay_interval=1)": 0.0084251945,
+        "TARSItemKNNXia(K=200,decay_function=concave,decay_interval=86400,fit_decay=0)": 0.0017751479
+    },
+    "precisionk_20": {
+        "TARSItemKNNHermann(K=200,decay_interval=1)": 0.0077028204,
+        "TARSItemKNNXia(K=200,decay_function=concave,decay_interval=86400,fit_decay=0)": 0.00135539
+    },
+    "precisionk_50": {
+        "TARSItemKNNHermann(K=200,decay_interval=1)": 0.006391734,
+        "TARSItemKNNXia(K=200,decay_function=concave,decay_interval=86400,fit_decay=0)": 0.0016787313
+    }
+}
