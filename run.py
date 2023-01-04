@@ -6,6 +6,8 @@ from recpack.pipelines import PipelineBuilder, OptimisationInfo, GridSearchInfo,
 from recpack.scenarios import Timed, TimedLastItemPrediction
 from recpack.preprocessing.filters import MinItemsPerUser, MinUsersPerItem
 
+from amazon_dataset import AmazonGamesDataset, AmazonToysAndGamesDataset
+
 from algorithm_config import ALGORITHM_CONFIG
 
 DATASET_PATH = "/home/robinverachtert/datasets/"
@@ -45,6 +47,19 @@ def get_datasets_info(dataset_path, dataset):
             "t_val": int(datetime.datetime(2005, 9, 1, 0).strftime("%s")),
             "delta_out": 31 * 24 * 3600,
         },
+        "amazon_games": {
+            "dataset": AmazonGamesDataset(dataset_path),
+            "t": int(datetime.datetime(2018, 4, 1, 0).strftime("%s")),
+            "t_val": int(datetime.datetime(2017, 10, 1, 0).strftime("%s")),
+            "delta_out": 6 * 31 * 24 * 3600,
+        },
+        "amazon_toys_and_games": {
+            "dataset": AmazonToysAndGamesDataset(dataset_path),
+            "t": int(datetime.datetime(2018, 4, 1, 0).strftime("%s")),
+            "t_val": int(datetime.datetime(2017, 10, 1, 0).strftime("%s")),
+            "delta_out": 6 * 31 * 24 * 3600,
+        },
+
     }
     return datasets[dataset]
 
