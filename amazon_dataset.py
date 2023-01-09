@@ -81,6 +81,9 @@ class AmazonDataset(Dataset):
     
         return df
 
+    def load_dataframe(self):
+        return self._load_dataframe()
+
 
 class AmazonGamesDataset(AmazonDataset):
     """Handles the Amazon Games dataset
