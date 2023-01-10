@@ -1,0 +1,421 @@
+running TARSItemKNNHermann, TARSItemKNNXia_convex, TARSItemKNNCoocDistanceexponential, TARSItemKNNCoocDistancelog, TARSItemKNNCoocDistancelinear on amazon_games
+>> Loading dataset
+<< Loaded dataset
+dataset shape = (42480, 14817)
+>> Splitting dataset
+<< Split dataset
+>> Running pipeline
+2023-01-09 09:01:35,382 - base - recpack - INFO - Fitting TARSItemKNNHermann complete - Took 2.88e+02s
+
+  0%|          | 0/50 [00:00<?, ?trial/s, best loss=?][A2023-01-09 09:03:38,868 - base - recpack - INFO - Fitting TARSItemKNNXia complete - Took 1.22e+02s
+
+  2%|▏         | 1/50 [02:02<1:40:08, 122.62s/trial, best loss: -0.008244386255974338][A2023-01-09 09:05:42,227 - base - recpack - INFO - Fitting TARSItemKNNXia complete - Took 1.23e+02s
+
+  4%|▍         | 2/50 [04:05<1:38:26, 123.06s/trial, best loss: -0.012031129010798228][A2023-01-09 09:07:44,003 - base - recpack - INFO - Fitting TARSItemKNNXia complete - Took 1.21e+02s
+
+  6%|▌         | 3/50 [06:07<1:35:56, 122.47s/trial, best loss: -0.01748477883687899] [A2023-01-09 09:09:46,276 - base - recpack - INFO - Fitting TARSItemKNNXia complete - Took 1.22e+02s
+
+  8%|▊         | 4/50 [08:10<1:33:50, 122.39s/trial, best loss: -0.01748477883687899][A2023-01-09 09:11:48,224 - base - recpack - INFO - Fitting TARSItemKNNXia complete - Took 1.21e+02s
+
+ 10%|█         | 5/50 [10:11<1:31:40, 122.23s/trial, best loss: -0.01748477883687899][A2023-01-09 09:13:50,272 - base - recpack - INFO - Fitting TARSItemKNNXia complete - Took 1.21e+02s
+
+ 12%|█▏        | 6/50 [12:14<1:29:35, 122.17s/trial, best loss: -0.01748477883687899][A2023-01-09 09:15:52,172 - base - recpack - INFO - Fitting TARSItemKNNXia complete - Took 1.21e+02s
+
+ 14%|█▍        | 7/50 [14:15<1:27:29, 122.08s/trial, best loss: -0.01748477883687899][A2023-01-09 09:17:53,903 - base - recpack - INFO - Fitting TARSItemKNNXia complete - Took 1.21e+02s
+
+ 16%|█▌        | 8/50 [16:17<1:25:22, 121.96s/trial, best loss: -0.01748477883687899][A2023-01-09 09:19:55,601 - base - recpack - INFO - Fitting TARSItemKNNXia complete - Took 1.21e+02s
+
+ 18%|█▊        | 9/50 [18:19<1:23:17, 121.89s/trial, best loss: -0.01748477883687899][A2023-01-09 09:21:57,579 - base - recpack - INFO - Fitting TARSItemKNNXia complete - Took 1.21e+02s
+
+ 20%|██        | 10/50 [20:21<1:21:16, 121.91s/trial, best loss: -0.01756404227575066][A2023-01-09 09:23:59,247 - base - recpack - INFO - Fitting TARSItemKNNXia complete - Took 1.21e+02s
+
+ 22%|██▏       | 11/50 [22:22<1:19:11, 121.84s/trial, best loss: -0.01756404227575066][A2023-01-09 09:26:00,814 - base - recpack - INFO - Fitting TARSItemKNNXia complete - Took 1.21e+02s
+
+ 24%|██▍       | 12/50 [24:24<1:17:06, 121.76s/trial, best loss: -0.01756404227575066][A2023-01-09 09:28:02,890 - base - recpack - INFO - Fitting TARSItemKNNXia complete - Took 1.21e+02s
+
+ 26%|██▌       | 13/50 [26:26<1:15:08, 121.85s/trial, best loss: -0.01756404227575066][A2023-01-09 09:30:05,125 - base - recpack - INFO - Fitting TARSItemKNNXia complete - Took 1.22e+02s
+
+ 28%|██▊       | 14/50 [28:28<1:13:10, 121.97s/trial, best loss: -0.01756404227575066][A2023-01-09 09:32:07,127 - base - recpack - INFO - Fitting TARSItemKNNXia complete - Took 1.21e+02s
+
+ 30%|███       | 15/50 [30:30<1:11:09, 121.98s/trial, best loss: -0.01756404227575066][A2023-01-09 09:34:09,394 - base - recpack - INFO - Fitting TARSItemKNNXia complete - Took 1.22e+02s
+
+ 32%|███▏      | 16/50 [32:33<1:09:10, 122.06s/trial, best loss: -0.01821710743239805][A2023-01-09 09:36:11,248 - base - recpack - INFO - Fitting TARSItemKNNXia complete - Took 1.21e+02s
+
+ 34%|███▍      | 17/50 [34:34<1:07:06, 122.00s/trial, best loss: -0.01821710743239805][A2023-01-09 09:38:12,592 - base - recpack - INFO - Fitting TARSItemKNNXia complete - Took 1.21e+02s
+
+ 36%|███▌      | 18/50 [36:36<1:04:57, 121.80s/trial, best loss: -0.01821710743239805][A2023-01-09 09:40:14,200 - base - recpack - INFO - Fitting TARSItemKNNXia complete - Took 1.21e+02s
+
+ 38%|███▊      | 19/50 [38:37<1:02:53, 121.73s/trial, best loss: -0.01821710743239805][A2023-01-09 09:42:15,835 - base - recpack - INFO - Fitting TARSItemKNNXia complete - Took 1.21e+02s
+
+ 40%|████      | 20/50 [40:39<1:00:51, 121.72s/trial, best loss: -0.01821710743239805][A2023-01-09 09:44:17,604 - base - recpack - INFO - Fitting TARSItemKNNXia complete - Took 1.21e+02s
+
+ 42%|████▏     | 21/50 [42:41<58:50, 121.73s/trial, best loss: -0.01847564522350742]  [A2023-01-09 09:46:19,092 - base - recpack - INFO - Fitting TARSItemKNNXia complete - Took 1.21e+02s
+
+ 44%|████▍     | 22/50 [44:42<56:46, 121.65s/trial, best loss: -0.019138562761850095][A2023-01-09 09:48:20,942 - base - recpack - INFO - Fitting TARSItemKNNXia complete - Took 1.21e+02s
+
+ 46%|████▌     | 23/50 [46:44<54:46, 121.71s/trial, best loss: -0.019138562761850095][A2023-01-09 09:50:22,676 - base - recpack - INFO - Fitting TARSItemKNNXia complete - Took 1.21e+02s
+
+ 48%|████▊     | 24/50 [48:46<52:44, 121.72s/trial, best loss: -0.019138562761850095][A2023-01-09 09:52:24,073 - base - recpack - INFO - Fitting TARSItemKNNXia complete - Took 1.21e+02s
+
+ 50%|█████     | 25/50 [50:47<50:40, 121.62s/trial, best loss: -0.019138562761850095][A2023-01-09 09:54:25,757 - base - recpack - INFO - Fitting TARSItemKNNXia complete - Took 1.21e+02s
+
+ 52%|█████▏    | 26/50 [52:49<48:39, 121.65s/trial, best loss: -0.019138562761850095][A2023-01-09 09:56:27,356 - base - recpack - INFO - Fitting TARSItemKNNXia complete - Took 1.21e+02s
+
+ 54%|█████▍    | 27/50 [54:51<46:37, 121.63s/trial, best loss: -0.019138562761850095][A2023-01-09 09:58:29,488 - base - recpack - INFO - Fitting TARSItemKNNXia complete - Took 1.22e+02s
+
+ 56%|█████▌    | 28/50 [56:53<44:39, 121.78s/trial, best loss: -0.019138562761850095][A2023-01-09 10:00:31,386 - base - recpack - INFO - Fitting TARSItemKNNXia complete - Took 1.21e+02s
+
+ 58%|█████▊    | 29/50 [58:55<42:38, 121.81s/trial, best loss: -0.019138562761850095][A2023-01-09 10:02:33,162 - base - recpack - INFO - Fitting TARSItemKNNXia complete - Took 1.21e+02s
+
+ 60%|██████    | 30/50 [1:00:56<40:36, 121.81s/trial, best loss: -0.019138562761850095][A2023-01-09 10:04:35,112 - base - recpack - INFO - Fitting TARSItemKNNXia complete - Took 1.21e+02s
+
+ 62%|██████▏   | 31/50 [1:02:58<38:35, 121.85s/trial, best loss: -0.019138562761850095][A2023-01-09 10:06:36,922 - base - recpack - INFO - Fitting TARSItemKNNXia complete - Took 1.21e+02s
+
+ 64%|██████▍   | 32/50 [1:05:00<36:33, 121.84s/trial, best loss: -0.019138562761850095][A2023-01-09 10:08:38,473 - base - recpack - INFO - Fitting TARSItemKNNXia complete - Took 1.21e+02s
+
+ 66%|██████▌   | 33/50 [1:07:02<34:29, 121.76s/trial, best loss: -0.019138562761850095][A2023-01-09 10:10:40,045 - base - recpack - INFO - Fitting TARSItemKNNXia complete - Took 1.21e+02s
+
+ 68%|██████▊   | 34/50 [1:09:03<32:27, 121.70s/trial, best loss: -0.019138562761850095][A2023-01-09 10:12:41,712 - base - recpack - INFO - Fitting TARSItemKNNXia complete - Took 1.21e+02s
+
+ 70%|███████   | 35/50 [1:11:05<30:25, 121.69s/trial, best loss: -0.019138562761850095][A2023-01-09 10:14:43,394 - base - recpack - INFO - Fitting TARSItemKNNXia complete - Took 1.21e+02s
+
+ 72%|███████▏  | 36/50 [1:13:07<28:23, 121.68s/trial, best loss: -0.019138562761850095][A2023-01-09 10:16:45,161 - base - recpack - INFO - Fitting TARSItemKNNXia complete - Took 1.21e+02s
+
+ 74%|███████▍  | 37/50 [1:15:08<26:22, 121.71s/trial, best loss: -0.019138562761850095][A2023-01-09 10:18:46,981 - base - recpack - INFO - Fitting TARSItemKNNXia complete - Took 1.21e+02s
+
+ 76%|███████▌  | 38/50 [1:17:10<24:20, 121.74s/trial, best loss: -0.019138562761850095][A2023-01-09 10:20:49,133 - base - recpack - INFO - Fitting TARSItemKNNXia complete - Took 1.22e+02s
+
+ 78%|███████▊  | 39/50 [1:19:12<22:20, 121.87s/trial, best loss: -0.019138562761850095][A2023-01-09 10:22:50,830 - base - recpack - INFO - Fitting TARSItemKNNXia complete - Took 1.21e+02s
+
+ 80%|████████  | 40/50 [1:21:14<20:18, 121.81s/trial, best loss: -0.019138562761850095][A2023-01-09 10:24:53,224 - base - recpack - INFO - Fitting TARSItemKNNXia complete - Took 1.22e+02s
+
+ 82%|████████▏ | 41/50 [1:23:16<18:17, 121.98s/trial, best loss: -0.019364572767599886][A2023-01-09 10:26:54,985 - base - recpack - INFO - Fitting TARSItemKNNXia complete - Took 1.21e+02s
+
+ 84%|████████▍ | 42/50 [1:25:18<16:15, 121.92s/trial, best loss: -0.019364572767599886][A2023-01-09 10:28:57,028 - base - recpack - INFO - Fitting TARSItemKNNXia complete - Took 1.21e+02s
+
+ 86%|████████▌ | 43/50 [1:27:20<14:13, 121.96s/trial, best loss: -0.019364572767599886][A2023-01-09 10:30:58,823 - base - recpack - INFO - Fitting TARSItemKNNXia complete - Took 1.21e+02s
+
+ 88%|████████▊ | 44/50 [1:29:22<12:11, 121.91s/trial, best loss: -0.019364572767599886][A2023-01-09 10:33:00,094 - base - recpack - INFO - Fitting TARSItemKNNXia complete - Took 1.21e+02s
+
+ 90%|█████████ | 45/50 [1:31:23<10:08, 121.72s/trial, best loss: -0.019364572767599886][A2023-01-09 10:35:01,681 - base - recpack - INFO - Fitting TARSItemKNNXia complete - Took 1.21e+02s
+
+ 92%|█████████▏| 46/50 [1:33:25<08:06, 121.68s/trial, best loss: -0.019364572767599886][A2023-01-09 10:37:03,508 - base - recpack - INFO - Fitting TARSItemKNNXia complete - Took 1.21e+02s
+
+ 94%|█████████▍| 47/50 [1:35:27<06:05, 121.72s/trial, best loss: -0.019364572767599886][A2023-01-09 10:39:05,133 - base - recpack - INFO - Fitting TARSItemKNNXia complete - Took 1.21e+02s
+
+ 96%|█████████▌| 48/50 [1:37:28<04:03, 121.69s/trial, best loss: -0.019364572767599886][A2023-01-09 10:41:07,170 - base - recpack - INFO - Fitting TARSItemKNNXia complete - Took 1.21e+02s
+
+ 98%|█████████▊| 49/50 [1:39:30<02:01, 121.80s/trial, best loss: -0.019364572767599886][A2023-01-09 10:43:09,022 - base - recpack - INFO - Fitting TARSItemKNNXia complete - Took 1.21e+02s
+
+100%|██████████| 50/50 [1:41:32<00:00, 121.81s/trial, best loss: -0.019364572767599886][A100%|██████████| 50/50 [1:41:32<00:00, 121.86s/trial, best loss: -0.019364572767599886]
+2023-01-09 10:45:11,234 - base - recpack - INFO - Fitting TARSItemKNNXia complete - Took 1.22e+02s
+
+  0%|          | 0/50 [00:00<?, ?trial/s, best loss=?][A2023-01-09 10:49:51,145 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.79e+02s
+
+  2%|▏         | 1/50 [04:38<3:47:30, 278.58s/trial, best loss: -0.0][A2023-01-09 10:54:22,033 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.71e+02s
+
+  4%|▍         | 2/50 [09:09<3:39:14, 274.05s/trial, best loss: -0.0][A2023-01-09 10:58:52,366 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.7e+02s
+
+  6%|▌         | 3/50 [13:39<3:33:20, 272.35s/trial, best loss: -0.0][A2023-01-09 11:03:22,791 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.7e+02s
+
+  8%|▊         | 4/50 [18:10<3:28:13, 271.59s/trial, best loss: -0.0][A2023-01-09 11:07:53,181 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.7e+02s
+
+ 10%|█         | 5/50 [22:40<3:23:22, 271.16s/trial, best loss: -0.0][A2023-01-09 11:12:24,360 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.71e+02s
+
+ 12%|█▏        | 6/50 [27:11<3:18:51, 271.17s/trial, best loss: -0.0][A2023-01-09 11:16:55,019 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.71e+02s
+
+ 14%|█▍        | 7/50 [31:42<3:14:13, 271.00s/trial, best loss: -0.0][A2023-01-09 11:21:24,971 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.7e+02s
+
+ 16%|█▌        | 8/50 [36:12<3:09:27, 270.67s/trial, best loss: -0.0][A2023-01-09 11:25:55,319 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.7e+02s
+
+ 18%|█▊        | 9/50 [40:42<3:04:53, 270.57s/trial, best loss: -0.0][A2023-01-09 11:30:25,429 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.7e+02s
+
+ 20%|██        | 10/50 [45:12<3:00:17, 270.43s/trial, best loss: -0.0][A2023-01-09 11:34:56,400 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.71e+02s
+
+ 22%|██▏       | 11/50 [49:43<2:55:53, 270.59s/trial, best loss: -0.0][A2023-01-09 11:39:26,483 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.7e+02s
+
+ 24%|██▍       | 12/50 [54:13<2:51:16, 270.44s/trial, best loss: -0.0][A2023-01-09 11:44:05,148 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.79e+02s
+
+ 26%|██▌       | 13/50 [58:52<2:48:18, 272.93s/trial, best loss: -0.0][A2023-01-09 11:48:36,739 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.72e+02s
+
+ 28%|██▊       | 14/50 [1:03:24<2:43:30, 272.53s/trial, best loss: -0.0][A2023-01-09 11:53:07,313 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.71e+02s
+
+ 30%|███       | 15/50 [1:07:54<2:38:37, 271.94s/trial, best loss: -0.0][A2023-01-09 11:57:46,544 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.79e+02s
+
+ 32%|███▏      | 16/50 [1:12:33<2:35:20, 274.13s/trial, best loss: -0.0][A2023-01-09 12:02:16,695 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.7e+02s
+
+ 34%|███▍      | 17/50 [1:17:04<2:30:06, 272.94s/trial, best loss: -0.0][A2023-01-09 12:06:47,073 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.7e+02s
+
+ 36%|███▌      | 18/50 [1:21:34<2:25:09, 272.17s/trial, best loss: -0.0][A2023-01-09 12:11:17,723 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.71e+02s
+
+ 38%|███▊      | 19/50 [1:26:05<2:20:23, 271.71s/trial, best loss: -0.0][A2023-01-09 12:15:48,335 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.71e+02s
+
+ 40%|████      | 20/50 [1:30:35<2:15:41, 271.38s/trial, best loss: -0.0][A2023-01-09 12:20:25,507 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.77e+02s
+
+ 42%|████▏     | 21/50 [1:35:12<2:12:00, 273.12s/trial, best loss: -0.0][A2023-01-09 12:25:03,388 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.78e+02s
+
+ 44%|████▍     | 22/50 [1:39:50<2:08:07, 274.55s/trial, best loss: -0.0][A2023-01-09 12:29:41,866 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.78e+02s
+
+ 46%|████▌     | 23/50 [1:44:29<2:04:04, 275.73s/trial, best loss: -0.0][A2023-01-09 12:34:19,755 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.78e+02s
+
+ 48%|████▊     | 24/50 [1:49:07<1:59:45, 276.38s/trial, best loss: -0.0][A2023-01-09 12:38:57,941 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.78e+02s
+
+ 50%|█████     | 25/50 [1:53:45<1:55:22, 276.92s/trial, best loss: -0.0][A2023-01-09 12:43:36,689 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.79e+02s
+
+ 52%|█████▏    | 26/50 [1:58:24<1:50:59, 277.47s/trial, best loss: -0.0][A2023-01-09 12:48:15,675 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.79e+02s
+
+ 54%|█████▍    | 27/50 [2:03:03<1:46:32, 277.92s/trial, best loss: -0.0][A2023-01-09 12:52:53,952 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.78e+02s
+
+ 56%|█████▌    | 28/50 [2:07:41<1:41:56, 278.03s/trial, best loss: -0.0][A2023-01-09 12:57:32,493 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.78e+02s
+
+ 58%|█████▊    | 29/50 [2:12:19<1:37:21, 278.18s/trial, best loss: -0.0][A2023-01-09 13:02:11,569 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.79e+02s
+
+ 60%|██████    | 30/50 [2:16:58<1:32:49, 278.45s/trial, best loss: -0.0][A2023-01-09 13:06:50,898 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.79e+02s
+
+ 62%|██████▏   | 31/50 [2:21:38<1:28:15, 278.71s/trial, best loss: -0.0][A2023-01-09 13:11:30,528 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.8e+02s
+
+ 64%|██████▍   | 32/50 [2:26:17<1:23:41, 278.99s/trial, best loss: -0.0][A2023-01-09 13:16:09,936 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.79e+02s
+
+ 66%|██████▌   | 33/50 [2:30:57<1:19:04, 279.11s/trial, best loss: -0.0][A2023-01-09 13:20:42,520 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.73e+02s
+
+ 68%|██████▊   | 34/50 [2:35:29<1:13:54, 277.16s/trial, best loss: -0.0][A2023-01-09 13:25:23,942 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.81e+02s
+
+ 70%|███████   | 35/50 [2:40:11<1:09:36, 278.44s/trial, best loss: -0.0][A2023-01-09 13:29:57,611 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.74e+02s
+
+ 72%|███████▏  | 36/50 [2:44:45<1:04:38, 277.01s/trial, best loss: -0.0][A2023-01-09 13:34:38,184 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.81e+02s
+
+ 74%|███████▍  | 37/50 [2:49:25<1:00:14, 278.08s/trial, best loss: -0.0][A2023-01-09 13:39:19,403 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.81e+02s
+
+ 76%|███████▌  | 38/50 [2:54:06<55:48, 279.02s/trial, best loss: -0.0]  [A2023-01-09 13:44:00,324 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.81e+02s
+
+ 78%|███████▊  | 39/50 [2:58:47<51:15, 279.59s/trial, best loss: -0.0][A2023-01-09 13:48:33,169 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.73e+02s
+
+ 80%|████████  | 40/50 [3:03:20<46:15, 277.57s/trial, best loss: -0.0][A2023-01-09 13:53:13,398 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.8e+02s
+
+ 82%|████████▏ | 41/50 [3:08:00<41:45, 278.37s/trial, best loss: -0.0][A2023-01-09 13:57:52,939 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.79e+02s
+
+ 84%|████████▍ | 42/50 [3:12:40<37:09, 278.72s/trial, best loss: -0.0][A2023-01-09 14:02:25,921 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.73e+02s
+
+ 86%|████████▌ | 43/50 [3:17:13<32:18, 277.00s/trial, best loss: -0.0][A2023-01-09 14:07:05,507 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.8e+02s
+
+ 88%|████████▊ | 44/50 [3:21:52<27:46, 277.77s/trial, best loss: -0.0][A2023-01-09 14:11:46,274 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.81e+02s
+
+ 90%|█████████ | 45/50 [3:26:33<23:13, 278.67s/trial, best loss: -0.0][A2023-01-09 14:16:19,562 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.73e+02s
+
+ 92%|█████████▏| 46/50 [3:31:06<18:28, 277.06s/trial, best loss: -0.0][A2023-01-09 14:20:53,555 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.74e+02s
+
+ 94%|█████████▍| 47/50 [3:35:40<13:48, 276.14s/trial, best loss: -0.0][A2023-01-09 14:25:34,685 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.81e+02s
+
+ 96%|█████████▌| 48/50 [3:40:22<09:15, 277.64s/trial, best loss: -0.0][A2023-01-09 14:30:07,499 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.73e+02s
+
+ 98%|█████████▊| 49/50 [3:44:54<04:36, 276.19s/trial, best loss: -0.0][A2023-01-09 14:34:47,818 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.8e+02s
+
+100%|██████████| 50/50 [3:49:35<00:00, 277.43s/trial, best loss: -0.0][A100%|██████████| 50/50 [3:49:35<00:00, 275.51s/trial, best loss: -0.0]
+2023-01-09 14:39:30,692 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.83e+02s
+
+  0%|          | 0/50 [00:00<?, ?trial/s, best loss=?][A2023-01-09 14:44:10,230 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.79e+02s
+
+  2%|▏         | 1/50 [04:39<3:48:38, 279.96s/trial, best loss: -0.005155637230861041][A2023-01-09 14:48:49,636 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.79e+02s
+
+  4%|▍         | 2/50 [09:19<3:43:42, 279.63s/trial, best loss: -0.017138418453862287][A2023-01-09 14:53:28,602 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.78e+02s
+
+  6%|▌         | 3/50 [13:58<3:38:48, 279.33s/trial, best loss: -0.017138418453862287][A2023-01-09 14:58:16,619 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.87e+02s
+
+  8%|▊         | 4/50 [18:46<3:36:48, 282.79s/trial, best loss: -0.017138418453862287][A2023-01-09 15:03:05,569 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.88e+02s
+
+ 10%|█         | 5/50 [23:35<3:33:45, 285.01s/trial, best loss: -0.017138418453862287][A2023-01-09 15:07:46,777 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.81e+02s
+
+ 12%|█▏        | 6/50 [28:16<3:28:02, 283.69s/trial, best loss: -0.017138418453862287][A2023-01-09 15:12:26,798 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.79e+02s
+
+ 14%|█▍        | 7/50 [32:56<3:22:27, 282.49s/trial, best loss: -0.017138418453862287][A2023-01-09 15:17:15,625 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.88e+02s
+
+ 16%|█▌        | 8/50 [37:45<3:19:10, 284.53s/trial, best loss: -0.017138418453862287][A2023-01-09 15:21:56,224 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.8e+02s
+
+ 18%|█▊        | 9/50 [42:25<3:13:34, 283.29s/trial, best loss: -0.017138418453862287][A2023-01-09 15:26:36,616 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.8e+02s
+
+ 20%|██        | 10/50 [47:06<3:08:15, 282.39s/trial, best loss: -0.017138418453862287][A2023-01-09 15:31:17,236 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.8e+02s
+
+ 22%|██▏       | 11/50 [51:46<3:03:12, 281.85s/trial, best loss: -0.017138418453862287][A2023-01-09 15:35:57,476 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.8e+02s
+
+ 24%|██▍       | 12/50 [56:27<2:58:11, 281.35s/trial, best loss: -0.017472563564040013][A2023-01-09 15:40:37,493 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.79e+02s
+
+ 26%|██▌       | 13/50 [1:01:07<2:53:15, 280.95s/trial, best loss: -0.01884586892196624][A2023-01-09 15:45:17,772 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.8e+02s
+
+ 28%|██▊       | 14/50 [1:05:47<2:48:26, 280.75s/trial, best loss: -0.01884586892196624][A2023-01-09 15:49:58,241 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.8e+02s
+
+ 30%|███       | 15/50 [1:10:27<2:43:43, 280.66s/trial, best loss: -0.020662980352603194][A2023-01-09 15:54:37,880 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.79e+02s
+
+ 32%|███▏      | 16/50 [1:15:07<2:38:52, 280.36s/trial, best loss: -0.020662980352603194][A2023-01-09 15:59:17,736 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.79e+02s
+
+ 34%|███▍      | 17/50 [1:19:47<2:34:06, 280.20s/trial, best loss: -0.020662980352603194][A2023-01-09 16:03:58,900 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.81e+02s
+
+ 36%|███▌      | 18/50 [1:24:28<2:29:35, 280.49s/trial, best loss: -0.02194656452795868] [A2023-01-09 16:08:39,413 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.8e+02s
+
+ 38%|███▊      | 19/50 [1:29:09<2:24:55, 280.50s/trial, best loss: -0.02194656452795868][A2023-01-09 16:13:20,371 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.8e+02s
+
+ 40%|████      | 20/50 [1:33:50<2:20:19, 280.64s/trial, best loss: -0.02194656452795868][A2023-01-09 16:18:02,615 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.82e+02s
+
+ 42%|████▏     | 21/50 [1:38:32<2:15:52, 281.12s/trial, best loss: -0.02194656452795868][A2023-01-09 16:22:44,215 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.81e+02s
+
+ 44%|████▍     | 22/50 [1:43:13<2:11:15, 281.27s/trial, best loss: -0.02194656452795868][A2023-01-09 16:27:25,787 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.81e+02s
+
+ 46%|████▌     | 23/50 [1:47:55<2:06:36, 281.35s/trial, best loss: -0.02194656452795868][A2023-01-09 16:32:07,615 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.81e+02s
+
+ 48%|████▊     | 24/50 [1:52:37<2:01:58, 281.50s/trial, best loss: -0.02194656452795868][A2023-01-09 16:36:48,550 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.8e+02s
+
+ 50%|█████     | 25/50 [1:57:18<1:57:13, 281.33s/trial, best loss: -0.02194656452795868][A2023-01-09 16:41:29,330 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.8e+02s
+
+ 52%|█████▏    | 26/50 [2:01:59<1:52:27, 281.16s/trial, best loss: -0.02194656452795868][A2023-01-09 16:46:09,900 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.8e+02s
+
+ 54%|█████▍    | 27/50 [2:06:39<1:47:42, 281.00s/trial, best loss: -0.02194656452795868][A2023-01-09 16:50:59,070 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.89e+02s
+
+ 56%|█████▌    | 28/50 [2:11:28<1:43:56, 283.46s/trial, best loss: -0.02194656452795868][A2023-01-09 16:55:39,955 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.8e+02s
+
+ 58%|█████▊    | 29/50 [2:16:09<1:38:56, 282.67s/trial, best loss: -0.02194656452795868][A2023-01-09 17:00:19,890 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.79e+02s
+
+ 60%|██████    | 30/50 [2:20:49<1:33:56, 281.85s/trial, best loss: -0.02194656452795868][A2023-01-09 17:05:00,553 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.8e+02s
+
+ 62%|██████▏   | 31/50 [2:25:30<1:29:08, 281.49s/trial, best loss: -0.02194656452795868][A2023-01-09 17:09:49,098 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.88e+02s
+
+ 64%|██████▍   | 32/50 [2:30:18<1:25:05, 283.63s/trial, best loss: -0.02194656452795868][A2023-01-09 17:14:30,706 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.81e+02s
+
+ 66%|██████▌   | 33/50 [2:35:00<1:20:11, 283.00s/trial, best loss: -0.02194656452795868][A2023-01-09 17:19:11,834 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.81e+02s
+
+ 68%|██████▊   | 34/50 [2:39:41<1:15:19, 282.44s/trial, best loss: -0.02194656452795868][A2023-01-09 17:24:00,576 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.88e+02s
+
+ 70%|███████   | 35/50 [2:44:30<1:11:05, 284.35s/trial, best loss: -0.02194656452795868][A2023-01-09 17:28:42,836 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.82e+02s
+
+ 72%|███████▏  | 36/50 [2:49:12<1:06:11, 283.70s/trial, best loss: -0.02194656452795868][A2023-01-09 17:33:31,650 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.88e+02s
+
+ 74%|███████▍  | 37/50 [2:54:01<1:01:48, 285.25s/trial, best loss: -0.02194656452795868][A2023-01-09 17:38:11,527 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.79e+02s
+
+ 76%|███████▌  | 38/50 [2:58:41<56:43, 283.63s/trial, best loss: -0.02194656452795868]  [A2023-01-09 17:42:51,220 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.79e+02s
+
+ 78%|███████▊  | 39/50 [3:03:20<51:46, 282.45s/trial, best loss: -0.02194656452795868][A2023-01-09 17:47:37,849 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.86e+02s
+
+ 80%|████████  | 40/50 [3:08:07<47:17, 283.72s/trial, best loss: -0.02194656452795868][A2023-01-09 17:52:16,907 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.78e+02s
+
+ 82%|████████▏ | 41/50 [3:12:46<42:20, 282.30s/trial, best loss: -0.02194656452795868][A2023-01-09 17:56:56,023 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.79e+02s
+
+ 84%|████████▍ | 42/50 [3:17:25<37:30, 281.35s/trial, best loss: -0.02194656452795868][A2023-01-09 18:01:35,871 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.79e+02s
+
+ 86%|████████▌ | 43/50 [3:22:05<32:46, 280.89s/trial, best loss: -0.02194656452795868][A2023-01-09 18:06:23,533 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.87e+02s
+
+ 88%|████████▊ | 44/50 [3:26:53<28:17, 282.94s/trial, best loss: -0.02194656452795868][A2023-01-09 18:11:03,678 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.8e+02s
+
+ 90%|█████████ | 45/50 [3:31:33<23:30, 282.10s/trial, best loss: -0.02194656452795868][A2023-01-09 18:15:43,137 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.79e+02s
+
+ 92%|█████████▏| 46/50 [3:36:12<18:45, 281.30s/trial, best loss: -0.02194656452795868][A2023-01-09 18:20:22,423 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.79e+02s
+
+ 94%|█████████▍| 47/50 [3:40:52<14:02, 280.69s/trial, best loss: -0.02194656452795868][A2023-01-09 18:25:00,679 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.78e+02s
+
+ 96%|█████████▌| 48/50 [3:45:30<09:19, 279.96s/trial, best loss: -0.02194656452795868][A2023-01-09 18:29:40,749 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.79e+02s
+
+ 98%|█████████▊| 49/50 [3:50:10<04:39, 280.00s/trial, best loss: -0.02194656452795868][A2023-01-09 18:34:28,716 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.87e+02s
+
+100%|██████████| 50/50 [3:54:58<00:00, 282.40s/trial, best loss: -0.02194656452795868][A100%|██████████| 50/50 [3:54:58<00:00, 281.97s/trial, best loss: -0.02194656452795868]
+2023-01-09 18:39:10,779 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.81e+02s
+
+  0%|          | 0/50 [00:00<?, ?trial/s, best loss=?][A2023-01-09 18:43:58,278 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.86e+02s
+
+  2%|▏         | 1/50 [04:46<3:54:07, 286.69s/trial, best loss: -0.005118449184604664][A2023-01-09 18:48:43,056 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.84e+02s
+
+  4%|▍         | 2/50 [09:31<3:48:22, 285.46s/trial, best loss: -0.0060977988376312575][A2023-01-09 18:53:18,619 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.75e+02s
+
+  6%|▌         | 3/50 [14:06<3:40:05, 280.97s/trial, best loss: -0.025243117486835328] [A2023-01-09 18:57:56,665 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.78e+02s
+
+  8%|▊         | 4/50 [18:45<3:34:33, 279.86s/trial, best loss: -0.025243117486835328][A2023-01-09 19:02:34,917 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.78e+02s
+
+ 10%|█         | 5/50 [23:23<3:29:28, 279.30s/trial, best loss: -0.025243117486835328][A2023-01-09 19:07:19,544 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.84e+02s
+
+ 12%|█▏        | 6/50 [28:07<3:26:06, 281.06s/trial, best loss: -0.025243117486835328][A2023-01-09 19:12:05,166 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.85e+02s
+
+ 14%|█▍        | 7/50 [32:53<3:22:30, 282.57s/trial, best loss: -0.025243117486835328][A2023-01-09 19:16:51,674 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.86e+02s
+
+ 16%|█▌        | 8/50 [37:40<3:18:40, 283.83s/trial, best loss: -0.025243117486835328][A2023-01-09 19:21:29,749 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.78e+02s
+
+ 18%|█▊        | 9/50 [42:18<3:12:42, 282.02s/trial, best loss: -0.025243117486835328][A2023-01-09 19:26:13,946 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.84e+02s
+
+ 20%|██        | 10/50 [47:02<3:08:25, 282.64s/trial, best loss: -0.025243117486835328][A2023-01-09 19:30:51,534 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.77e+02s
+
+ 22%|██▏       | 11/50 [51:39<3:02:45, 281.17s/trial, best loss: -0.025243117486835328][A2023-01-09 19:35:28,592 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.77e+02s
+
+ 24%|██▍       | 12/50 [56:16<2:57:14, 279.87s/trial, best loss: -0.025243117486835328][A2023-01-09 19:40:12,137 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.83e+02s
+
+ 26%|██▌       | 13/50 [1:01:00<2:53:15, 280.95s/trial, best loss: -0.025243117486835328][A2023-01-09 19:44:49,784 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.77e+02s
+
+ 28%|██▊       | 14/50 [1:05:38<2:48:00, 280.00s/trial, best loss: -0.025243117486835328][A2023-01-09 19:49:27,680 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.77e+02s
+
+ 30%|███       | 15/50 [1:10:15<2:42:57, 279.35s/trial, best loss: -0.025772150674589468][A2023-01-09 19:54:13,486 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.85e+02s
+
+ 32%|███▏      | 16/50 [1:15:01<2:39:25, 281.33s/trial, best loss: -0.025772150674589468][A2023-01-09 19:58:51,624 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.78e+02s
+
+ 34%|███▍      | 17/50 [1:19:39<2:34:11, 280.34s/trial, best loss: -0.025772150674589468][A2023-01-09 20:03:29,872 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.78e+02s
+
+ 36%|███▌      | 18/50 [1:24:18<2:29:11, 279.73s/trial, best loss: -0.025772150674589468][A2023-01-09 20:08:07,332 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.77e+02s
+
+ 38%|███▊      | 19/50 [1:28:55<2:24:10, 279.06s/trial, best loss: -0.025772150674589468][A2023-01-09 20:12:52,099 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.84e+02s
+
+ 40%|████      | 20/50 [1:33:40<2:20:21, 280.71s/trial, best loss: -0.025772150674589468][A2023-01-09 20:17:28,305 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.76e+02s
+
+ 42%|████▏     | 21/50 [1:38:16<2:15:01, 279.35s/trial, best loss: -0.025772150674589468][A2023-01-09 20:22:06,213 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.78e+02s
+
+ 44%|████▍     | 22/50 [1:42:54<2:10:10, 278.96s/trial, best loss: -0.025772150674589468][A2023-01-09 20:26:43,117 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.76e+02s
+
+ 46%|████▌     | 23/50 [1:47:31<2:05:14, 278.31s/trial, best loss: -0.025772150674589468][A2023-01-09 20:31:20,545 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.77e+02s
+
+ 48%|████▊     | 24/50 [1:52:08<2:00:29, 278.06s/trial, best loss: -0.026281656512952258][A2023-01-09 20:35:58,100 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.77e+02s
+
+ 50%|█████     | 25/50 [1:56:46<1:55:47, 277.91s/trial, best loss: -0.026281656512952258][A2023-01-09 20:40:36,353 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.78e+02s
+
+ 52%|█████▏    | 26/50 [2:01:24<1:51:12, 278.01s/trial, best loss: -0.026281656512952258][A2023-01-09 20:45:14,767 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.78e+02s
+
+ 54%|█████▍    | 27/50 [2:06:03<1:46:37, 278.14s/trial, best loss: -0.026281656512952258][A2023-01-09 20:49:54,456 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.79e+02s
+
+ 56%|█████▌    | 28/50 [2:10:42<1:42:09, 278.62s/trial, best loss: -0.026281656512952258][A2023-01-09 20:54:33,764 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.79e+02s
+
+ 58%|█████▊    | 29/50 [2:15:22<1:37:34, 278.81s/trial, best loss: -0.026672091837589396][A2023-01-09 20:59:13,579 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.79e+02s
+
+ 60%|██████    | 30/50 [2:20:01<1:33:02, 279.12s/trial, best loss: -0.026924411023382458][A2023-01-09 21:03:53,658 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.8e+02s
+
+ 62%|██████▏   | 31/50 [2:24:41<1:28:28, 279.41s/trial, best loss: -0.02703964880407585] [A2023-01-09 21:08:33,193 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.79e+02s
+
+ 64%|██████▍   | 32/50 [2:29:21<1:23:50, 279.45s/trial, best loss: -0.02703964880407585][A2023-01-09 21:13:11,131 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.78e+02s
+
+ 66%|██████▌   | 33/50 [2:33:59<1:19:02, 279.00s/trial, best loss: -0.02703964880407585][A2023-01-09 21:17:49,045 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.77e+02s
+
+ 68%|██████▊   | 34/50 [2:38:37<1:14:18, 278.68s/trial, best loss: -0.02703964880407585][A2023-01-09 21:22:26,441 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.77e+02s
+
+ 70%|███████   | 35/50 [2:43:14<1:09:34, 278.29s/trial, best loss: -0.02703964880407585][A2023-01-09 21:27:04,824 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.78e+02s
+
+ 72%|███████▏  | 36/50 [2:47:53<1:04:56, 278.36s/trial, best loss: -0.02703964880407585][A2023-01-09 21:31:43,474 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.78e+02s
+
+ 74%|███████▍  | 37/50 [2:52:31<1:00:19, 278.40s/trial, best loss: -0.02703964880407585][A2023-01-09 21:36:21,477 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.78e+02s
+
+ 76%|███████▌  | 38/50 [2:57:09<55:39, 278.29s/trial, best loss: -0.02703964880407585]  [A2023-01-09 21:40:59,413 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.78e+02s
+
+ 78%|███████▊  | 39/50 [3:01:47<51:00, 278.20s/trial, best loss: -0.02703964880407585][A2023-01-09 21:45:46,162 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.86e+02s
+
+ 80%|████████  | 40/50 [3:06:34<46:47, 280.76s/trial, best loss: -0.02703964880407585][A2023-01-09 21:50:25,849 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.79e+02s
+
+ 82%|████████▏ | 41/50 [3:11:14<42:03, 280.42s/trial, best loss: -0.02703964880407585][A2023-01-09 21:55:03,585 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.77e+02s
+
+ 84%|████████▍ | 42/50 [3:15:51<37:17, 279.64s/trial, best loss: -0.02703964880407585][A2023-01-09 21:59:51,522 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.87e+02s
+
+ 86%|████████▌ | 43/50 [3:20:40<32:55, 282.16s/trial, best loss: -0.02703964880407585][A2023-01-09 22:04:30,984 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.79e+02s
+
+ 88%|████████▊ | 44/50 [3:25:19<28:07, 281.30s/trial, best loss: -0.02703964880407585][A2023-01-09 22:09:10,327 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.79e+02s
+
+ 90%|█████████ | 45/50 [3:29:58<23:23, 280.72s/trial, best loss: -0.02703964880407585][A2023-01-09 22:13:48,737 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.78e+02s
+
+ 92%|█████████▏| 46/50 [3:34:37<18:40, 280.02s/trial, best loss: -0.02703964880407585][A2023-01-09 22:18:34,926 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.86e+02s
+
+ 94%|█████████▍| 47/50 [3:39:23<14:05, 281.86s/trial, best loss: -0.02703964880407585][A2023-01-09 22:23:13,175 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.78e+02s
+
+ 96%|█████████▌| 48/50 [3:44:01<09:21, 280.81s/trial, best loss: -0.02703964880407585][A2023-01-09 22:27:52,197 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.79e+02s
+
+ 98%|█████████▊| 49/50 [3:48:40<04:40, 280.25s/trial, best loss: -0.02703964880407585][A2023-01-09 22:32:38,931 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.86e+02s
+
+100%|██████████| 50/50 [3:53:27<00:00, 282.23s/trial, best loss: -0.02703964880407585][A100%|██████████| 50/50 [3:53:27<00:00, 280.15s/trial, best loss: -0.02703964880407585]
+2023-01-09 22:37:19,669 - base - recpack - INFO - Fitting TARSItemKNNCoocDistance complete - Took 2.8e+02s
+<< Finished running pipeline
