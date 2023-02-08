@@ -14,7 +14,7 @@ DATASET_PATH = "/home/robinverachtert/datasets/"
 
 
 def recsys_dataset(dataset_path):
-    ds = RecsysChallenge2015(path=dataset_path, filename="yoochoose-clicks.dat", preprocess_default=False)
+    ds = RecsysChallenge2015(path=dataset_path, filename="yoochoose-clicks.dat", use_default_filters=False)
     ds.add_filter(MinUsersPerItem(50, item_ix=ds.ITEM_IX, user_ix=ds.USER_IX))
     ds.add_filter(MinItemsPerUser(3, item_ix=ds.ITEM_IX, user_ix=ds.USER_IX))
 
@@ -59,7 +59,6 @@ def get_datasets_info(dataset_path, dataset):
             "t_val": int(datetime.datetime(2017, 10, 1, 0).strftime("%s")),
             "delta_out": 6 * 31 * 24 * 3600,
         },
-
     }
     return datasets[dataset]
 
@@ -127,7 +126,7 @@ def run(dataset, dataset_path, algorithm, scenario, results_path, experiment_nam
         builder.add_algorithm(
             conf.get("algorithm", a),
             params=conf.get("params", {}),
-            optimisation_info=conf.get("optimisation_info", OptimisationInfo()),
+            optimisation_info=conf.get("optimisation_info", None),
         )
 
     pipe = builder.build()
