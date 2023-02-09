@@ -30,7 +30,7 @@ def get_datasets_info(dataset_path, dataset):
             "delta_out": 12 * 3600,
         },
         "cosmeticsshop": {
-            "dataset": CosmeticsShop(path=dataset_path, filename="cosmeticsshop_views.csv"),
+            "dataset": CosmeticsShop(path=dataset_path, filename="archive_cosmeticsshop.zip"),
             "t": int(datetime.datetime(2020, 2, 15, 0).strftime("%s")),
             "t_val": int(datetime.datetime(2020, 2, 1, 0).strftime("%s")),
             "delta_out": 14 * 24 * 3600,
