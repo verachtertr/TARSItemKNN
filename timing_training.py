@@ -13,6 +13,7 @@ from recpack.algorithms import (
     TARSItemKNN,
     TARSItemKNNHermann,
     TARSItemKNNXia,
+    TorchMLAlgorithm,
 )
 
 # %%
@@ -37,32 +38,31 @@ for dataset in ["cosmeticsshop", "adressa", "recsys2015", "amazon_games", "amazo
     scenario.split(im)
 
     for algorithm in [
-        TARSItemKNNDing,
-        TARSItemKNNLee_W5,
-        TARSItemKNNLiu,
-        TARSItemKNNLiu2012,
-        TARSItemKNNVaz,
-        GRU4RecNegSampling,
-        EASE,
-        ItemKNN,
-        SequentialRules,
-        TARSItemKNN,
-        TARSItemKNNHermann,
-        TARSItemKNNXia,
+        TARSItemKNNDing(),
+        TARSItemKNNLee_W5(),
+        TARSItemKNNLiu(),
+        TARSItemKNNLiu2012(),
+        TARSItemKNNVaz(),
+        GRU4RecNegSampling(validation_sample_size=10000, batch_size=512, max_epochs=8, predict_topK=100),
+        EASE(),
+        ItemKNN(),
+        SequentialRules(),
+        TARSItemKNN(),
+        TARSItemKNNHermann(),
+        TARSItemKNNXia(),
     ]:
-        if dataset in ["recsys2015", "amazon_toys_and_games"] and algorithm == EASE:
+        if dataset in ["recsys2015", "amazon_toys_and_games"] and issubclass(type(algorithm), EASE):
             continue  # These datasets have too many items.
         start = time.time()
-        algo = algorithm()  # Just using default parameters, as we just need the timing.
-        if algorithm == GRU4RecNegSampling:
-            algo.fit(scenario.validation_training_data, scenario.validation_data)
+        if issubclass(type(algorithm), TorchMLAlgorithm):
+            algorithm.fit(scenario.validation_training_data, scenario.validation_data)
         else:
-            algo.fit(scenario.full_training_data)
+            algorithm.fit(scenario.full_training_data)
         fit = time.time()
-        algo.predict(scenario.test_data_in)
+        algorithm.predict(scenario.test_data_in)
         end = time.time()
         time_dict = {
-            "algorithm": algo.name,
+            "algorithm": algorithm.name,
             "dataset": dataset,
             "timing": end - start,
             "training_time": fit - start,
