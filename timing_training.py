@@ -6,7 +6,7 @@ from recpack.algorithms import (
     TARSItemKNNLiu,
     TARSItemKNNLiu2012,
     TARSItemKNNVaz,
-    GRU4Rec,
+    GRU4RecNegSampling,
     EASE,
     ItemKNN,
     SequentialRules,
@@ -16,7 +16,7 @@ from recpack.algorithms import (
 )
 
 # %%
-dataset_path = "/Users/robinverachtert/workspace/datasets/"
+dataset_path = "/home/robinverachtert/datasets/"
 
 
 # %%
@@ -30,7 +30,7 @@ timings = []
 
 # %%
 
-for dataset in ["adressa", "cosmeticsshop", "recsys2015", "amazon_games", "amazon_toys_and_games"]:
+for dataset in ["cosmeticsshop", "adressa", "recsys2015", "amazon_games", "amazon_toys_and_games"]:
     ds_info = get_datasets_info(dataset_path, dataset)
     im = ds_info["dataset"].load()
     scenario = Timed(t=ds_info["t"], t_validation=ds_info["t_val"], validation=True, delta_out=ds_info["delta_out"])
@@ -42,7 +42,7 @@ for dataset in ["adressa", "cosmeticsshop", "recsys2015", "amazon_games", "amazo
         TARSItemKNNLiu,
         TARSItemKNNLiu2012,
         TARSItemKNNVaz,
-        GRU4Rec,
+        GRU4RecNegSampling,
         EASE,
         ItemKNN,
         SequentialRules,
@@ -54,7 +54,10 @@ for dataset in ["adressa", "cosmeticsshop", "recsys2015", "amazon_games", "amazo
             continue  # These datasets have too many items.
         start = time.time()
         algo = algorithm()  # Just using default parameters, as we just need the timing.
-        algo.fit(scenario.full_training_data)
+        if algorithm == GRU4RecNegSampling:
+            algo.fit(scenario.validation_training_data, scenario.validation_data)
+        else:
+            algo.fit(scenario.full_training_data)
         fit = time.time()
         algo.predict(scenario.test_data_in)
         end = time.time()
