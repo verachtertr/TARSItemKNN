@@ -43,7 +43,7 @@ for dataset in ["cosmeticsshop", "adressa", "recsys2015", "amazon_games", "amazo
         TARSItemKNNLiu(),
         TARSItemKNNLiu2012(),
         TARSItemKNNVaz(),
-        GRU4RecNegSampling(validation_sample_size=10000, batch_size=512, max_epochs=8, predict_topK=100),
+        #GRU4RecNegSampling(validation_sample_size=10000, batch_size=512, max_epochs=8, predict_topK=100),
         EASE(),
         ItemKNN(),
         SequentialRules(),
@@ -51,7 +51,7 @@ for dataset in ["cosmeticsshop", "adressa", "recsys2015", "amazon_games", "amazo
         TARSItemKNNHermann(),
         TARSItemKNNXia(),
     ]:
-        if dataset in ["recsys2015", "amazon_toys_and_games"] and issubclass(type(algorithm), EASE):
+        if dataset in ["recsys2015", "amazon_toys_and_games", "cosmeticsshop"] and issubclass(type(algorithm), EASE):
             continue  # These datasets have too many items.
         start = time.time()
         if issubclass(type(algorithm), TorchMLAlgorithm):
