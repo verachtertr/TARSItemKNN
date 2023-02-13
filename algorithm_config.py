@@ -55,7 +55,7 @@ ALGORITHM_CONFIG = {
             }
         )
     },
-    "TARSItemKNNHermann": {"optimisation_info": OptimisationInfo()},
+    "TARSItemKNNHermann": {"optimisation_info": None},
     "TARSItemKNNXia_concave": {
         "algorithm": "TARSItemKNNXia",
         "optimisation_info": HyperoptInfo(
