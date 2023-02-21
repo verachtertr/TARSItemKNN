@@ -1,1 +1,58 @@
-{"NDCGK_10":{"TARSItemKNNHermann(K=200,decay_interval=1)":0.0018736637,"TARSItemKNNXia(K=200,decay_function=convex,decay_interval=2411283,fit_decay=0.9260924636538164)":0.010446946},"NDCGK_20":{"TARSItemKNNHermann(K=200,decay_interval=1)":0.0027531082,"TARSItemKNNXia(K=200,decay_function=convex,decay_interval=2411283,fit_decay=0.9260924636538164)":0.0127847909},"NDCGK_50":{"TARSItemKNNHermann(K=200,decay_interval=1)":0.004917289,"TARSItemKNNXia(K=200,decay_function=convex,decay_interval=2411283,fit_decay=0.9260924636538164)":0.0160254641},"CoverageK_10":{"TARSItemKNNHermann(K=200,decay_interval=1)":0.265548798,"TARSItemKNNXia(K=200,decay_function=convex,decay_interval=2411283,fit_decay=0.9260924636538164)":0.2384961845},"CoverageK_20":{"TARSItemKNNHermann(K=200,decay_interval=1)":0.3834270469,"TARSItemKNNXia(K=200,decay_function=convex,decay_interval=2411283,fit_decay=0.9260924636538164)":0.3752797062},"CalibratedRecallK_10":{"TARSItemKNNHermann(K=200,decay_interval=1)":0.0043480748,"TARSItemKNNXia(K=200,decay_function=convex,decay_interval=2411283,fit_decay=0.9260924636538164)":0.0192230677},"CalibratedRecallK_20":{"TARSItemKNNHermann(K=200,decay_interval=1)":0.0078951885,"TARSItemKNNXia(K=200,decay_function=convex,decay_interval=2411283,fit_decay=0.9260924636538164)":0.0283769094},"CalibratedRecallK_50":{"TARSItemKNNHermann(K=200,decay_interval=1)":0.0189942216,"TARSItemKNNXia(K=200,decay_function=convex,decay_interval=2411283,fit_decay=0.9260924636538164)":0.0447966131},"ReciprocalRankK_10":{"TARSItemKNNHermann(K=200,decay_interval=1)":0.0011459783,"TARSItemKNNXia(K=200,decay_function=convex,decay_interval=2411283,fit_decay=0.9260924636538164)":0.007788598},"ReciprocalRankK_20":{"TARSItemKNNHermann(K=200,decay_interval=1)":0.0013758613,"TARSItemKNNXia(K=200,decay_function=convex,decay_interval=2411283,fit_decay=0.9260924636538164)":0.0084431112},"ReciprocalRankK_50":{"TARSItemKNNHermann(K=200,decay_interval=1)":0.0017111769,"TARSItemKNNXia(K=200,decay_function=convex,decay_interval=2411283,fit_decay=0.9260924636538164)":0.0089559272},"PrecisionK_10":{"TARSItemKNNHermann(K=200,decay_interval=1)":0.0004348075,"TARSItemKNNXia(K=200,decay_function=convex,decay_interval=2411283,fit_decay=0.9260924636538164)":0.0019223068},"PrecisionK_20":{"TARSItemKNNHermann(K=200,decay_interval=1)":0.0003947594,"TARSItemKNNXia(K=200,decay_function=convex,decay_interval=2411283,fit_decay=0.9260924636538164)":0.0014188455},"PrecisionK_50":{"TARSItemKNNHermann(K=200,decay_interval=1)":0.0003798844,"TARSItemKNNXia(K=200,decay_function=convex,decay_interval=2411283,fit_decay=0.9260924636538164)":0.0008959323}}
+{
+    "NDCGK_10": {
+        "TARSItemKNNHermann(K=200,decay_interval=1)": 0.0018736637,
+        "TARSItemKNNXia(K=200,decay_function=convex,decay_interval=2411283,fit_decay=0.9260924636538164)": 0.010446946
+    },
+    "NDCGK_20": {
+        "TARSItemKNNHermann(K=200,decay_interval=1)": 0.0027531082,
+        "TARSItemKNNXia(K=200,decay_function=convex,decay_interval=2411283,fit_decay=0.9260924636538164)": 0.0127847909
+    },
+    "NDCGK_50": {
+        "TARSItemKNNHermann(K=200,decay_interval=1)": 0.004917289,
+        "TARSItemKNNXia(K=200,decay_function=convex,decay_interval=2411283,fit_decay=0.9260924636538164)": 0.0160254641
+    },
+    "CoverageK_10": {
+        "TARSItemKNNHermann(K=200,decay_interval=1)": 0.265548798,
+        "TARSItemKNNXia(K=200,decay_function=convex,decay_interval=2411283,fit_decay=0.9260924636538164)": 0.2384961845
+    },
+    "CoverageK_20": {
+        "TARSItemKNNHermann(K=200,decay_interval=1)": 0.3834270469,
+        "TARSItemKNNXia(K=200,decay_function=convex,decay_interval=2411283,fit_decay=0.9260924636538164)": 0.3752797062
+    },
+    "CalibratedRecallK_10": {
+        "TARSItemKNNHermann(K=200,decay_interval=1)": 0.0043480748,
+        "TARSItemKNNXia(K=200,decay_function=convex,decay_interval=2411283,fit_decay=0.9260924636538164)": 0.0192230677
+    },
+    "CalibratedRecallK_20": {
+        "TARSItemKNNHermann(K=200,decay_interval=1)": 0.0078951885,
+        "TARSItemKNNXia(K=200,decay_function=convex,decay_interval=2411283,fit_decay=0.9260924636538164)": 0.0283769094
+    },
+    "CalibratedRecallK_50": {
+        "TARSItemKNNHermann(K=200,decay_interval=1)": 0.0189942216,
+        "TARSItemKNNXia(K=200,decay_function=convex,decay_interval=2411283,fit_decay=0.9260924636538164)": 0.0447966131
+    },
+    "ReciprocalRankK_10": {
+        "TARSItemKNNHermann(K=200,decay_interval=1)": 0.0011459783,
+        "TARSItemKNNXia(K=200,decay_function=convex,decay_interval=2411283,fit_decay=0.9260924636538164)": 0.007788598
+    },
+    "ReciprocalRankK_20": {
+        "TARSItemKNNHermann(K=200,decay_interval=1)": 0.0013758613,
+        "TARSItemKNNXia(K=200,decay_function=convex,decay_interval=2411283,fit_decay=0.9260924636538164)": 0.0084431112
+    },
+    "ReciprocalRankK_50": {
+        "TARSItemKNNHermann(K=200,decay_interval=1)": 0.0017111769,
+        "TARSItemKNNXia(K=200,decay_function=convex,decay_interval=2411283,fit_decay=0.9260924636538164)": 0.0089559272
+    },
+    "PrecisionK_10": {
+        "TARSItemKNNHermann(K=200,decay_interval=1)": 0.0004348075,
+        "TARSItemKNNXia(K=200,decay_function=convex,decay_interval=2411283,fit_decay=0.9260924636538164)": 0.0019223068
+    },
+    "PrecisionK_20": {
+        "TARSItemKNNHermann(K=200,decay_interval=1)": 0.0003947594,
+        "TARSItemKNNXia(K=200,decay_function=convex,decay_interval=2411283,fit_decay=0.9260924636538164)": 0.0014188455
+    },
+    "PrecisionK_50": {
+        "TARSItemKNNHermann(K=200,decay_interval=1)": 0.0003798844,
+        "TARSItemKNNXia(K=200,decay_function=convex,decay_interval=2411283,fit_decay=0.9260924636538164)": 0.0008959323
+    }
+}

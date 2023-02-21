@@ -1,5 +1,5 @@
 {
-    "ndcgk_10": {
+    "NDCGK_10": {
         "TARSItemKNNLee_W3(K=200,similarity=cosine)": 0.0285115959,
         "TARSItemKNNLee_W5(K=200,similarity=cosine)": 0.0283370372,
         "TARSItemKNNLiu(K=200,fit_decay=0,predict_decay=1.6534391534391535e-06)": 0.035014529,
@@ -12,7 +12,7 @@
         "TARSItemKNN(K=200,decay_function=concave,decay_interval=1,fit_decay=0.1,predict_decay=0.9,similarity=cosine)": 0.0296247193,
         "TARSItemKNN(K=200,decay_function=inverse,decay_interval=1,fit_decay=0.0002777777777777778,predict_decay=0.0002777777777777778,similarity=cosine)": 0.0159192049
     },
-    "ndcgk_20": {
+    "NDCGK_20": {
         "TARSItemKNNLee_W3(K=200,similarity=cosine)": 0.0314294889,
         "TARSItemKNNLee_W5(K=200,similarity=cosine)": 0.0312577916,
         "TARSItemKNNLiu(K=200,fit_decay=0,predict_decay=1.6534391534391535e-06)": 0.0376538308,
@@ -25,7 +25,7 @@
         "TARSItemKNN(K=200,decay_function=concave,decay_interval=1,fit_decay=0.1,predict_decay=0.9,similarity=cosine)": 0.0327622097,
         "TARSItemKNN(K=200,decay_function=inverse,decay_interval=1,fit_decay=0.0002777777777777778,predict_decay=0.0002777777777777778,similarity=cosine)": 0.0181115881
     },
-    "ndcgk_50": {
+    "NDCGK_50": {
         "TARSItemKNNLee_W3(K=200,similarity=cosine)": 0.0347855469,
         "TARSItemKNNLee_W5(K=200,similarity=cosine)": 0.034621409,
         "TARSItemKNNLiu(K=200,fit_decay=0,predict_decay=1.6534391534391535e-06)": 0.0405125756,
@@ -38,7 +38,7 @@
         "TARSItemKNN(K=200,decay_function=concave,decay_interval=1,fit_decay=0.1,predict_decay=0.9,similarity=cosine)": 0.035852883,
         "TARSItemKNN(K=200,decay_function=inverse,decay_interval=1,fit_decay=0.0002777777777777778,predict_decay=0.0002777777777777778,similarity=cosine)": 0.0213433678
     },
-    "coveragek_10": {
+    "CoverageK_10": {
         "TARSItemKNNLee_W3(K=200,similarity=cosine)": 0.660379253,
         "TARSItemKNNLee_W5(K=200,similarity=cosine)": 0.6610534167,
         "TARSItemKNNLiu(K=200,fit_decay=0,predict_decay=1.6534391534391535e-06)": 0.6572522807,
@@ -51,7 +51,7 @@
         "TARSItemKNN(K=200,decay_function=concave,decay_interval=1,fit_decay=0.1,predict_decay=0.9,similarity=cosine)": 0.654182684,
         "TARSItemKNN(K=200,decay_function=inverse,decay_interval=1,fit_decay=0.0002777777777777778,predict_decay=0.0002777777777777778,similarity=cosine)": 0.5207699811
     },
-    "coveragek_20": {
+    "CoverageK_20": {
         "TARSItemKNNLee_W3(K=200,similarity=cosine)": 0.8371105629,
         "TARSItemKNNLee_W5(K=200,similarity=cosine)": 0.8375552241,
         "TARSItemKNNLiu(K=200,fit_decay=0,predict_decay=1.6534391534391535e-06)": 0.8571633484,
@@ -64,7 +64,7 @@
         "TARSItemKNN(K=200,decay_function=concave,decay_interval=1,fit_decay=0.1,predict_decay=0.9,similarity=cosine)": 0.8327643583,
         "TARSItemKNN(K=200,decay_function=inverse,decay_interval=1,fit_decay=0.0002777777777777778,predict_decay=0.0002777777777777778,similarity=cosine)": 0.7439899019
     },
-    "calibratedrecallk_10": {
+    "CalibratedRecallK_10": {
         "TARSItemKNNLee_W3(K=200,similarity=cosine)": 0.0425653642,
         "TARSItemKNNLee_W5(K=200,similarity=cosine)": 0.0424509411,
         "TARSItemKNNLiu(K=200,fit_decay=0,predict_decay=1.6534391534391535e-06)": 0.0502317066,
@@ -77,7 +77,7 @@
         "TARSItemKNN(K=200,decay_function=concave,decay_interval=1,fit_decay=0.1,predict_decay=0.9,similarity=cosine)": 0.0441100749,
         "TARSItemKNN(K=200,decay_function=inverse,decay_interval=1,fit_decay=0.0002777777777777778,predict_decay=0.0002777777777777778,similarity=cosine)": 0.0235711425
     },
-    "calibratedrecallk_20": {
+    "CalibratedRecallK_20": {
         "TARSItemKNNLee_W3(K=200,similarity=cosine)": 0.0542365124,
         "TARSItemKNNLee_W5(K=200,similarity=cosine)": 0.0540076663,
         "TARSItemKNNLiu(K=200,fit_decay=0,predict_decay=1.6534391534391535e-06)": 0.0607014131,
@@ -90,7 +90,7 @@
         "TARSItemKNN(K=200,decay_function=concave,decay_interval=1,fit_decay=0.1,predict_decay=0.9,similarity=cosine)": 0.0565249728,
         "TARSItemKNN(K=200,decay_function=inverse,decay_interval=1,fit_decay=0.0002777777777777778,predict_decay=0.0002777777777777778,similarity=cosine)": 0.0323245037
     },
-    "calibratedrecallk_50": {
+    "CalibratedRecallK_50": {
         "TARSItemKNNLee_W3(K=200,similarity=cosine)": 0.0711139081,
         "TARSItemKNNLee_W5(K=200,similarity=cosine)": 0.0708850621,
         "TARSItemKNNLiu(K=200,fit_decay=0,predict_decay=1.6534391534391535e-06)": 0.0749470794,
@@ -103,7 +103,7 @@
         "TARSItemKNN(K=200,decay_function=concave,decay_interval=1,fit_decay=0.1,predict_decay=0.9,similarity=cosine)": 0.0720292923,
         "TARSItemKNN(K=200,decay_function=inverse,decay_interval=1,fit_decay=0.0002777777777777778,predict_decay=0.0002777777777777778,similarity=cosine)": 0.0486869958
     },
-    "reciprocalrankk_10": {
+    "ReciprocalRankK_10": {
         "TARSItemKNNLee_W3(K=200,similarity=cosine)": 0.0241882095,
         "TARSItemKNNLee_W5(K=200,similarity=cosine)": 0.0239960515,
         "TARSItemKNNLiu(K=200,fit_decay=0,predict_decay=1.6534391534391535e-06)": 0.0302770127,
@@ -116,7 +116,7 @@
         "TARSItemKNN(K=200,decay_function=concave,decay_interval=1,fit_decay=0.1,predict_decay=0.9,similarity=cosine)": 0.0251652323,
         "TARSItemKNN(K=200,decay_function=inverse,decay_interval=1,fit_decay=0.0002777777777777778,predict_decay=0.0002777777777777778,similarity=cosine)": 0.0135815132
     },
-    "reciprocalrankk_20": {
+    "ReciprocalRankK_20": {
         "TARSItemKNNLee_W3(K=200,similarity=cosine)": 0.0249592696,
         "TARSItemKNNLee_W5(K=200,similarity=cosine)": 0.0247963922,
         "TARSItemKNNLiu(K=200,fit_decay=0,predict_decay=1.6534391534391535e-06)": 0.0310026092,
@@ -129,7 +129,7 @@
         "TARSItemKNN(K=200,decay_function=concave,decay_interval=1,fit_decay=0.1,predict_decay=0.9,similarity=cosine)": 0.0260255051,
         "TARSItemKNN(K=200,decay_function=inverse,decay_interval=1,fit_decay=0.0002777777777777778,predict_decay=0.0002777777777777778,similarity=cosine)": 0.0141724141
     },
-    "reciprocalrankk_50": {
+    "ReciprocalRankK_50": {
         "TARSItemKNNLee_W3(K=200,similarity=cosine)": 0.0254993637,
         "TARSItemKNNLee_W5(K=200,similarity=cosine)": 0.0253435309,
         "TARSItemKNNLiu(K=200,fit_decay=0,predict_decay=1.6534391534391535e-06)": 0.0315091206,
@@ -142,7 +142,7 @@
         "TARSItemKNN(K=200,decay_function=concave,decay_interval=1,fit_decay=0.1,predict_decay=0.9,similarity=cosine)": 0.0265277062,
         "TARSItemKNN(K=200,decay_function=inverse,decay_interval=1,fit_decay=0.0002777777777777778,predict_decay=0.0002777777777777778,similarity=cosine)": 0.0146853586
     },
-    "precisionk_10": {
+    "PrecisionK_10": {
         "TARSItemKNNLee_W3(K=200,similarity=cosine)": 0.0042565364,
         "TARSItemKNNLee_W5(K=200,similarity=cosine)": 0.0042450941,
         "TARSItemKNNLiu(K=200,fit_decay=0,predict_decay=1.6534391534391535e-06)": 0.0050231707,
@@ -155,7 +155,7 @@
         "TARSItemKNN(K=200,decay_function=concave,decay_interval=1,fit_decay=0.1,predict_decay=0.9,similarity=cosine)": 0.0044110075,
         "TARSItemKNN(K=200,decay_function=inverse,decay_interval=1,fit_decay=0.0002777777777777778,predict_decay=0.0002777777777777778,similarity=cosine)": 0.0023571143
     },
-    "precisionk_20": {
+    "PrecisionK_20": {
         "TARSItemKNNLee_W3(K=200,similarity=cosine)": 0.0027118256,
         "TARSItemKNNLee_W5(K=200,similarity=cosine)": 0.0027003833,
         "TARSItemKNNLiu(K=200,fit_decay=0,predict_decay=1.6534391534391535e-06)": 0.0030350707,
@@ -168,7 +168,7 @@
         "TARSItemKNN(K=200,decay_function=concave,decay_interval=1,fit_decay=0.1,predict_decay=0.9,similarity=cosine)": 0.0028262486,
         "TARSItemKNN(K=200,decay_function=inverse,decay_interval=1,fit_decay=0.0002777777777777778,predict_decay=0.0002777777777777778,similarity=cosine)": 0.0016162252
     },
-    "precisionk_50": {
+    "PrecisionK_50": {
         "TARSItemKNNLee_W3(K=200,similarity=cosine)": 0.0014222782,
         "TARSItemKNNLee_W5(K=200,similarity=cosine)": 0.0014177012,
         "TARSItemKNNLiu(K=200,fit_decay=0,predict_decay=1.6534391534391535e-06)": 0.0014989416,
